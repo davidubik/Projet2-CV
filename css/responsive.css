@@ -1,0 +1,267 @@
+
+
+/* TABLETTE */
+
+@media screen and (max-width:960px)
+{
+
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        width: 100%;
+    }
+
+  /*MAIN*/
+
+    .dates
+    {
+        display:none;
+    }
+
+    p
+    {
+        margin-bottom: 2%;
+    }
+
+    #container
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #section_formation, #section_ex_pro, #competences
+    {
+        margin-top: 25%;
+    }
+
+     #formation
+    {
+        margin-left : 2%;
+    }
+
+ /*RECOMANDATIONS*/
+
+    .recomandations
+    {
+      margin-top: 10%;
+    }
+
+    /* ASIDE */
+
+
+    .logo_contact
+    {
+        font-size: 1.2em;
+    }
+
+    /* HERO */
+
+    #hero
+    {
+        width: 10em;
+        margin-bottom:0;
+    }
+
+    .bio
+    {
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
+    /*LOISIRS*/
+
+    #loisirs
+    {
+        font-size: 1em;
+        margin-top:-1%;
+    }
+
+
+}
+
+/* TABLETTE breakpoint 2*/
+
+
+@media screen and (max-width:720px)
+{
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        width: 100%;
+    }
+
+    p
+    {
+        margin-bottom: 2%;
+    }
+
+    #container
+    {
+        flex-direction: column;
+    }
+
+    /*MAIN*/
+
+    main
+    {
+        width: 100%;
+    }
+
+    /*ASIDE*/
+
+    aside
+    {
+        width: 100%;
+        order:2 ;
+        margin-top:0;
+    }
+
+    /* HERO */
+
+    #hero
+    {
+        width: 7em;
+        margin-bottom: 0;
+    }
+
+    #loisirs
+    {
+        margin-top: 2%;
+    }
+
+    #loisirs div i
+    {
+        margin-bottom: 4%;
+    }
+
+    #bio
+    {
+        text-align:justify;
+        margin:2% 2% auto;
+    }
+
+}
+
+
+
+/* MOBILE-PHONE */
+
+@media screen and (max-width:380px)
+{
+
+    /*GENERAL*/
+
+
+    h3
+    {
+        text-align: center;
+        font-size: 1em;
+    }
+
+
+    small
+    {
+        display: none;
+    }
+
+    hr
+    {
+      border-bottom:2px solid #00746b;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+
+    /*CONTAINER, MAIN, HEADER*/
+    #container
+    {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    main, header
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-left: none;
+        padding-top: 0;
+    }
+
+    /*FORMATION, EX PRO, FORMATION*/
+
+    #section_formation,#ex_pro, .recomandations
+    {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9em;
+        text-align: center;
+        width: 100%;
+    }
+
+    #formation, #ex_pro, .recomandations
+    {
+        margin-top: 15%;
+    }
+
+    .dates
+    {
+        display: none;
+    }
+
+    /*RECOMANDATIONS*/
+
+       .recomandations
+       {
+
+       }
+
+       .recomand__clients
+       {
+         flex-direction: column;
+         text-align: center;
+         margin-top: 10%;
+       }
+
+    /*ASIDE*/
+
+    aside
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-right: none;
+        order: -1;
+        margin-top: 5%;
+    }
+
+    #hero
+    {
+        width: 30%;
+        align-self: center;
+    }
+
+    .logo_contact, #loisirs
+    {
+        font-size: 1em;
+    }
+
+
+    #biographie
+    {
+        display: none;
+    }
+
+}
