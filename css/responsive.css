@@ -18,6 +18,18 @@
 
   /*MAIN*/
 
+
+
+  .underligne
+  {
+    width:4.6%;
+    height: 2px;
+    background: #00695C;
+    margin-top: 7.5%;
+    margin-left: 7%;
+    position: absolute;
+  }
+
     .dates
     {
         display:none;
@@ -28,15 +40,16 @@
         margin-bottom: 2%;
     }
 
+
     #container
     {
         display: flex;
         justify-content: space-around;
     }
 
-    #section_formation, #section_ex_pro, #competences
+    #section_formation, #section_ex_pro, .recomandations
     {
-        margin-top: 25%;
+        margin-top: 55%;
     }
 
      #formation
@@ -46,9 +59,15 @@
 
  /*RECOMANDATIONS*/
 
-    .recomandations
+
+
+    .recomand__clients
     {
-      margin-top: 10%;
+      display:flex;
+      justify-content: space-around;
+      font-family: 'Rubik', sans-serif;
+      margin-left: 10%;
+      margin-top: 5%;
     }
 
     /* ASIDE */
@@ -64,7 +83,7 @@
     #hero
     {
         width: 10em;
-        margin-bottom:0;
+        margin-bottom:4%;
     }
 
     .bio
@@ -79,6 +98,14 @@
     {
         font-size: 1em;
         margin-top:-1%;
+    }
+
+    #loisirs div
+    {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2em;
+        margin-top: 15%;
     }
 
 
@@ -105,6 +132,54 @@
         margin-bottom: 2%;
     }
 
+    .underligne
+    {
+      width:4.6%;
+      height: 2px;
+      background: #00695C;
+      margin-top: 11.2%;
+      margin-left: 36%;
+      position: absolute;
+    }
+
+
+
+    h1
+    {
+        text-align: center;
+        font-family: "Rubik";
+    }
+
+    h3
+    {
+    text-align: left;
+    }
+
+    .developpeur_web_freelance
+    {
+        text-align: center;
+        position: relative;
+        margin-top: 1%;
+        font-size: 1.3rem;
+        font-family: 'Rajdhani', cursive;
+    }
+
+    .logo_titres
+    {
+      font-size: 2em;
+      margin-top: -6%;
+      position: absolute;
+      margin-left: 13%;
+      color: #00695C;
+    }
+
+    hr
+    {
+      border-bottom:2px solid #00695C;
+      width: 85%;
+      margin-left: 10%;
+    }
+
     #container
     {
         flex-direction: column;
@@ -115,6 +190,23 @@
     main
     {
         width: 100%;
+    }
+
+    /*RECOMANDATIONS*/
+
+    .recomandations
+    {
+
+      margin-bottom: 5%;
+    }
+
+    .recomand__clients
+    {
+      display:flex;
+      justify-content: space-around;
+      margin-left: 10%;
+      margin-top: 5%;
+      font-family: 'Rubik', sans-serif;
     }
 
     /*ASIDE*/
@@ -131,7 +223,7 @@
     #hero
     {
         width: 7em;
-        margin-bottom: 0;
+        margin-bottom: 2%;
     }
 
     #loisirs
@@ -141,18 +233,49 @@
 
     #loisirs div i
     {
-        margin-bottom: 4%;
+        margin-top: 2%;
     }
 
     #bio
     {
         text-align:justify;
-        margin:2% 2% auto;
+        margin:-2% -2% auto;
     }
 
 }
+/* breakpoint 3 Chrome*/
 
+@media screen and (max-width: 501px)
+{
+#contact
+{
+  margin-left: 2%;
+}
 
+  .underligne
+  {
+    width:14%;
+    height: 2px;
+    background: #00695C;
+    margin-top: 15%;
+    margin-left: 30%;
+    position: absolute;
+  }
+
+  .logo_titres
+  {
+    font-size: 1.6em;
+    margin-top: -6%;
+    position: absolute;
+    margin-left: 13%;
+    color: #00695C;
+  }
+
+  #biographie
+  {
+    display:none;
+  }
+}
 
 /* MOBILE-PHONE */
 
@@ -160,7 +283,10 @@
 {
 
     /*GENERAL*/
-
+    body
+    {
+      width: 100%;
+    }
 
     h3
     {
@@ -177,9 +303,30 @@
     hr
     {
       border-bottom:2px solid #00746b;
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%;
+    }
+
+    .logo_titres
+    {
+      font-size: 1em;
+      margin-top: -5%;
+      position: absolute;
+      margin-left: 13%;
+      color: #00695C;
+    }
+
+    .fa-graduation-cap
+    {
+      margin-top: 0;
+    }
+
+    .fa-pencil-alt
+    {
+        margin-top: -1%
+    }
+
+    .fa-suitcase
+    {
+      margin-top: -1%;
     }
 
     /*CONTAINER, MAIN, HEADER*/
@@ -189,6 +336,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
+        margin:0;
     }
 
     main, header
@@ -196,24 +344,41 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        border-left: none;
         padding-top: 0;
+        margin: 0;
+    }
+
+    .underligne
+    {
+      width:17%;
+      height: 2px;
+      background: #00695C;
+      margin-top: 21%;
+      margin-left: 18%;
+      position: absolute;
     }
 
     /*FORMATION, EX PRO, FORMATION*/
 
-    #section_formation,#ex_pro, .recomandations
+    #section_formation, #section_ex_pro, .recomandations
     {
         display: flex;
         flex-direction: column;
         font-size: 0.9em;
         text-align: center;
         width: 100%;
+        margin: 0;
+        margin-top: 20%;
     }
 
     #formation, #ex_pro, .recomandations
     {
-        margin-top: 15%;
+      margin-top: 10%;
+    }
+
+    .recomand__clients
+    {
+      margin-top: 35%;
     }
 
     .dates
@@ -223,10 +388,6 @@
 
     /*RECOMANDATIONS*/
 
-       .recomandations
-       {
-
-       }
 
        .recomand__clients
        {

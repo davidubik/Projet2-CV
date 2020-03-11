@@ -17,7 +17,23 @@ body
     justify-content: center;
 }
 
-h1, h2,h4
+h1
+{
+    margin-left: 10%;
+    font-family: "Rubik";
+}
+
+.developpeur_web_freelance
+{
+    margin-left: 7%;
+    position: absolute;
+    margin-top: 5%;
+    font-size: 1.3rem;
+    font-family: 'Rajdhani', cursive;
+    font-weight: 900; 
+}
+
+ h2,h4
 {
     text-align: center;
     font-family: "Rubik";
@@ -26,6 +42,7 @@ h1, h2,h4
 h2
 {
     background: #d7d7d7;
+    color: rgb(0,105,92);
 }
 
 h3
@@ -44,9 +61,53 @@ a:hover
     border-bottom: 2px solid black;
 }
 
+
+.logo_titres
+{
+  font-size: 2em;
+  margin-top: -4%;
+  position: absolute;
+  margin-left: 9%;
+  color: #00695C;
+}
+
+.gros_point
+{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid green;
+  margin-top: -3%;
+  margin-left: -2%;
+    position: absolute;
+}
+
+.petit__point
+{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: green;
+  position: relative;
+  margin-left: 2.5px;
+  margin-top:3px;
+}
+
+.point__seul
+{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: green;
+  position: absolute;
+  margin-left: -1.5%;
+  margin-top:-2.5%;
+}
+
+
 hr
 {
-  border-bottom:2px solid #00746b;
+  border-bottom:2px solid #00695C;
   width: 85%;
   margin-left: 12%;
 }
@@ -58,32 +119,29 @@ main
     background: #f2f5f7;
 }
 
+
 /*HEADER*/
 
 header
 {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
 
-#h2_developpeur_web, #junior
+.underligne
 {
-    font-family: "Rubik";
-    font-size: 2em;
+  width:4.6%;
+  height: 2px;
+  background: #00695C;
+  margin-top: 6.7%;
+  margin-left: 7%;
+  position: absolute;
 }
 
 #david
 {
-    color: #00746b;
-}
-
-
-#junior
-{
-    font-size: 1.2em;
-    color: #00746b;
-    font-family: 'Rajdhani', sans-serif;
+    color: rgb(0,105,92);
 }
 
 /*FORMATION*/
@@ -100,6 +158,7 @@ header
     justify-content: space-around;
     font-family: 'Rubik', sans-serif;
     margin-top: 5%;
+    margin-left: 8%;
 }
 
 /*EXPERIENCE PROFESSIONNELLES */
@@ -107,7 +166,7 @@ header
 #section_ex_pro
 {
     align-self: center;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 #ex_pro
@@ -116,13 +175,14 @@ header
     justify-content: space-around;
     font-family: 'Rubik', sans-serif;
     margin-top: 5%;
+    margin-left: 8%;
 }
 
 /*RECOMANDATIONS*/
 
 .recomandations
 {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .recomand__clients
@@ -140,16 +200,23 @@ aside
     display: flex;
     flex-direction: column;
     width: 30%;
-    background: #00746b;
+    background: #00695C;
     font-family: "Rubik";
-    border-radius: 7px;
-    border-right:4px solid #000;
 }
 
 #img_hero
 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+#hero
+{
+    margin-top: 2%;
+    border-radius:50%;
+    width: 50%;
+    border: 4px solid rgb(27,94,32);
+    object-fit: contain;
 }
 /*CONTACT*/
 
@@ -175,8 +242,8 @@ ul li, a
 {
     text-align: justify;
     margin: 4% 4% auto;
-    font-style: italic;
     font-size: 1em;
+    letter-spacing: .1rem;
 }
 
 /*LOISIRS*/
@@ -185,6 +252,7 @@ ul li, a
 {
     display: flex;
     flex-direction:column;
+
 }
 
 #loisirs div
@@ -192,5 +260,5 @@ ul li, a
     display: flex;
     justify-content: space-around;
     font-size: 2em;
-    margin-top: 5%;
+    margin-bottom: 3%;
 }
