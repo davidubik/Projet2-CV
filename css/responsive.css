@@ -2,7 +2,7 @@
 
 /* TABLETTE */
 
-@media screen and (max-width:960px)
+@media screen and (max-width:992px)
 {
 
     *
@@ -105,7 +105,7 @@
         display: flex;
         justify-content: space-around;
         font-size: 2em;
-        margin-top: 15%;
+        margin-top: 20%;
     }
 
 
@@ -114,7 +114,7 @@
 /* TABLETTE breakpoint 2*/
 
 
-@media screen and (max-width:720px)
+@media screen and (max-width:768px)
 {
     *
     {
@@ -233,7 +233,7 @@
 
     #loisirs div i
     {
-        margin-top: 2%;
+        margin-bottom: 30%;
     }
 
     #bio
@@ -243,7 +243,7 @@
     }
 
 }
-/* breakpoint 3 Chrome*/
+/* breakpoint 3 */
 
 @media screen and (max-width: 501px)
 {
@@ -279,7 +279,7 @@
 
 /* MOBILE-PHONE */
 
-@media screen and (max-width:380px)
+@media screen and (max-width:576px)
 {
 
     /*GENERAL*/
@@ -305,12 +305,24 @@
       border-bottom:2px solid #00746b;
     }
 
+    .underligne
+    {
+      width:14%;
+      height: 2px;
+      background: #00695C;
+      -webkit-margin-top: 15%;
+      -o-margin-top: 20%;
+      margin-top: 15%;
+      margin-left: 28%;
+      position: absolute;
+    }
+
     .logo_titres
     {
       font-size: 1em;
       margin-top: -5%;
       position: absolute;
-      margin-left: 13%;
+      margin-left: 10%;
       color: #00695C;
     }
 
@@ -350,12 +362,17 @@
 
     .underligne
     {
-      width:17%;
+      width:12%;
       height: 2px;
       background: #00695C;
-      margin-top: 21%;
-      margin-left: 18%;
+      margin-top: 16%;
+      margin-left: 25%;
       position: absolute;
+    }
+
+    .fa-graduation-cap
+    {
+      margin-left: 10%;
     }
 
     /*FORMATION, EX PRO, FORMATION*/
